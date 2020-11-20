@@ -10,5 +10,11 @@ pipeline {
                 '''
             }
         }
+        stage('ShowFinishedTime') {
+            steps {
+                sh 'echo "Finished time:"'
+                sh '`date`'
+            }
+        }
     }
 }
